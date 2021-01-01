@@ -12,7 +12,6 @@
 import key_value_ds
 ds_instance = key_value_ds.get_instance()
 ```
-
 ###### To create an data
 ```
 data_key = 'T_key'
@@ -27,14 +26,14 @@ retrieve_key = 'T_key'
 ds_instance.get(retrieve_key)   # returns {"value": 1} if retrieved within 5 seconds else ValueError
 ```
 
+###### Delete all data
+```
+ds_instance.delete_all()
+```
+
 ###### To delete the data
 ```
 key_to_delete = 'T_key'
 ds_instance.delete(key_to_delete) 
 # key-value is removed from the datastore
-```
-
-###### Delete all data
-```
-ds_instance.delete_all()
 ```
