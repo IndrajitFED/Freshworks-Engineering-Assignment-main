@@ -1,0 +1,29 @@
+import os
+from setuptools import setup
+
+
+def read(fname):
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+
+
+setup(
+    name='key_value_ds',
+    version='1.0.3',
+    author='IndrajitFED',
+    author_email='indrajitshinde234@gmail.com',
+    description='A key value datastore which stores data locally in a memory-mapped file.',
+    license='MIT',
+    url='https://github.com/IndrajitFED/key_value_ds',
+    download_url='https://github.com/IndrajitFED/key_value_ds/releases/tag/v1.0.3',
+    packages=['key_value_ds', 'tests'],
+    long_description=read('README.md'),
+    long_description_content_type='text/markdown',
+    classifiers=[
+        "Development Status :: 5 - Production/Stable",
+        "Topic :: Utilities",
+        "License :: OSI Approved :: MIT License",
+    ],
+    extras_require={
+        'dev': ['pytest', 'wheel']
+    },
+)
