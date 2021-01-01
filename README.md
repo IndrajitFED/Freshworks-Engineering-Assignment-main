@@ -1,4 +1,4 @@
-##### INDRAJIT SHINDE
+##### INDRAJIT SHINDE aka INDRAJITFED
 ##### Freshworks-Engineering-Assignment
 ##### [key-value-ds](https://pypi.org/project/key-value-ds/)
 ##### File based Key-Value datastore
@@ -9,8 +9,8 @@
 
 ###### Simply First Create an instance
 ```
-import pair_key_value_ds
-ds_instance = pair_key_value_ds.get_instance()
+import key_value_ds
+ds_instance = key_value_ds.get_instance()
 ```
 
 ###### To create an data
@@ -31,7 +31,7 @@ ds_instance.get(retrieve_key)   # returns {"value": 1} if retrieved within 5 sec
 ```
 key_to_delete = 'T_key'
 ds_instance.delete(key_to_delete) 
-# pair of key-value is removed from the datastore
+# key-value is removed from the datastore
 ```
 
 ###### Delete all data
